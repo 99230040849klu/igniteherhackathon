@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Student Registration</h2>
+
+<form method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+
+    <select name="class_level">
+        <option>8th</option>
+        <option>9th</option>
+        <option>10th</option>
+        <option>11th</option>
+        <option>12th</option>
+    </select>
+
+    <select name="interest">
+        <option>Math</option>
+        <option>Biology</option>
+        <option>Computers</option>
+        <option>Physics</option>
+    </select>
+
+    <input type="text" name="location" placeholder="Location">
+
+    <button type="submit">Register</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IgniteHer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>IgniteHer - STEM Platform</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/mentors">Mentors</a>
+        <a href="/rolemodels">Role Models</a>
+        <a href="/awareness">STEM Awareness</a>
+    </nav>
+</header>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

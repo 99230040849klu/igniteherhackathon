@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Welcome {{ student.name }}</h2>
+
+<h3>Recommended Career:</h3>
+<p>{{ career }}</p>
+
+{% if mentor %}
+<h3>Your Mentor Match:</h3>
+<p><strong>{{ mentor.name }}</strong></p>
+<p>Experience: {{ mentor.experience }} years</p>
+<p>{{ mentor.bio }}</p>
+{% else %}
+<p>No mentor available currently.</p>
+{% endif %}
+
+{% endblock %}

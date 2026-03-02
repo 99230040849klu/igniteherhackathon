@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Available Mentors</h2>
+
+{% for mentor in mentors %}
+<div class="card">
+    <h3>{{ mentor.name }}</h3>
+    <p>Field: {{ mentor.field }}</p>
+    <p>Experience: {{ mentor.experience }} years</p>
+    <p>{{ mentor.bio }}</p>
+</div>
+{% endfor %}
+
+{% endblock %}
